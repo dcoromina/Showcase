@@ -7,7 +7,7 @@ import { LuCreditCard } from "react-icons/lu";
 
 const CompNav = () => {
   return (
-    <div className="h-full hidden sm:flex  sm:w-3/12 lg:w-2/12 bg-slate-500 border-slate-400 border-solid border-2 rounded-md p-2  flex-col gap-5">
+    <div className="h-full hidden sm:flex  sm:w-3/12 lg:w-2/12 bg-slate-500 border-slate-400 border-solid border-2 rounded-md p-2  flex-col gap-5 overflow-y-auto">
       <div className="uppercase font-bold text-xs sm:text-sm md:text-md lg:text-lg ">
         <Image
           src="https://dcoromina.s-ul.eu/2xx7g30O"
