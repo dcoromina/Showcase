@@ -16,6 +16,14 @@ const CompBrowser = () => {
       <CompCard />
       <CompCard />
       <CompCard />
+      <CompCard />
+      <CompCard />
+      <CompCard />
+      <CompCard />
+      <CompCard />
+      <CompCard />
+      <CompCard />
+      <CompCard />
     </div>
   );
 };

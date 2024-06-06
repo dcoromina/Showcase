@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const CompCard = () => {
+const CompCard = async () => {
   return (
     <div className="uppercase font-bold text-xs sm:text-xs md:text-xs lg:text-base bg-[url('https://dcoromina.s-ul.eu/dCqzpQ3q')] bg-cover bg-center rounded-xl w-52 h-52 lg:w-72 lg:h-72 border-slate-300 border-solid border-4 p-3 cursor-pointer ">
       <div className="relative h-full">
