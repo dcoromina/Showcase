@@ -10,7 +10,7 @@ const itemDetails = (props) => {
   const product = props.product;
   return (
     <div className="w-svw h-svh p-3 md:p-5">
-      <div className="flex flex-col h-full w-full bg-slate-500 rounded-lg p-2 border border-solid">
+      <div className="flex flex-col h-fit w-full bg-slate-500 rounded-lg p-2 border border-solid">
         <div className="flex flex-row gap-5">
           <Link href="/" className="w-fit ">
             <IoIosArrowRoundBack className="size-10" />
@@ -27,7 +27,7 @@ const itemDetails = (props) => {
           </div>
         </div>
         {/* Info zone */}
-        <div className="uppercase text-center font-bold flex flex-col ">
+        <div className="uppercase text-center font-bold flex flex-col items-center ">
           <h1>Title</h1>
           <div className="flex flex-row flex-wrap w-full  gap-5">
             <div className="rating">
