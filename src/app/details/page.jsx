@@ -9,7 +9,7 @@ import PreviewPhone from "../component/phone_view";
 const itemDetails = (props) => {
   const product = props.product;
   return (
-    <div className="w-svw h-svh p-3 md:p-5">
+    <div className="w-svw h-svh p-2 md:p-5">
       <div className="flex flex-col h-fit w-full bg-slate-500 rounded-lg p-2 border border-solid">
         <div className="flex flex-row gap-5">
           <Link href="/" className="w-fit ">
