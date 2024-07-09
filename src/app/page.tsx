@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="flex h-screen flex-row  justify-between space-x-5 p-2">
       <CompNav />
-      <div className="w-full h-full flex flex-col gap-5 justify-start items-center md:flex-row md:flex-wrap md:items-start bg-slate-400 rounded-md p-5 overflow-y-auto ">
+      <div className="w-full h-full flex flex-col gap-2 justify-start items-center md:flex-row md:flex-wrap md:items-start bg-slate-400 rounded-md p-5 overflow-y-auto ">
         {products.map((product) => (
           <CompCard key={product.id} product={product} />
         ))}
