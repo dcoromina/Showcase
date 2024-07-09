@@ -35,7 +35,7 @@ export default function Home() {
       <CompNav />
       <div className="w-full h-full flex flex-col gap-5 justify-start items-center md:flex-row md:flex-wrap md:items-start bg-slate-400 rounded-md p-5 overflow-y-auto ">
         {products.map((product) => (
-          <CompCard product={product} />
+          <CompCard key={product.id} product={product} />
         ))}
       </div>
     </main>

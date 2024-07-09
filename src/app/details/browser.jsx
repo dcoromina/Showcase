@@ -5,7 +5,7 @@ const CompBrowser = () => {
   return (
     <div className="w-full h-full flex flex-row flex-wrap gap-5 justify-center bg-slate-400 rounded-md p-5 overflow-y-auto ">
       {products.map((product) => (
-        <CompCard />
+        <CompCard key={product.id} />
       ))}
     </div>
   );
