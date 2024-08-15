@@ -28,9 +28,9 @@ const itemDetails = (props) => {
           </div>
         </div>
         {/* Info zone */}
-        <div className="uppercase text-center font-bold flex flex-col items-center w-full ">
-          <h1>Title</h1>
-          <div className="flex flex-row flex-wrap w-full  gap-5">
+        <div className="uppercase text-center font-bold flex flex-col items-center w-full gap-5 ">
+          <h1>[Project name]</h1>
+          <div className="flex flex-row flex-wrap w-full justify-center gap-5">
             <div className="rating">
               <input
                 type="radio"
@@ -97,16 +97,19 @@ const itemDetails = (props) => {
             </div>
           </div>
         </div>
-        <div className="divider"></div>
+        <div className="divider">
+          <h1 className="font-bold uppercase p-5 text-center">Previews</h1>
+        </div>
         {/* Preview zone */}
         <div className="">
-          <h1 className="font-bold uppercase p-5 text-center">Previews</h1>
           <PreviewPhone></PreviewPhone>
         </div>
 
-        <div className="divider"></div>
+        <div className="divider">
+          {" "}
+          <h1 className="font-bold text-center uppercase">Code</h1>
+        </div>
         {/* code preview */}
-        <h1 className="font-bold text-center uppercase">Code</h1>
         <div className="mockup-code">
           <pre data-prefix="~">
             <code>

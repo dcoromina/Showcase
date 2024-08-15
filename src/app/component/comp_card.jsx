@@ -12,8 +12,8 @@ function CompCard(props, key) {
       >
         <div className="relative h-full">
           <div className="absolute flex flex-row justify-between items-center w-full">
-            <div className="border-solid border-2 border-white rounded cursor-pointer  bg-black/50 h-fit p-1">
-              <p> {product.tag}</p>
+            <div className="border-solid border-2 border-white rounded-lg cursor-pointer  bg-black/50 h-fit p-1">
+              <p> {product.projectType}</p>
             </div>
             <Image
               className="border-solid border-2 border-white p-1 rounded-lg bg-black/50"

@@ -6,10 +6,9 @@ import Browser from "./details/browser";
 import { useState, useEffect } from "react";
 import { supabase } from "./utils/supabase/clients";
 import CompCard from "./component/comp_card";
+import { BrowserRouter } from "react-router-dom";
 
 export default function Home() {
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
   const [products, setProducts] = useState<any[]>([]);
 
   useEffect(() => {
@@ -18,12 +17,10 @@ export default function Home() {
         const { data, error } = await supabase.from("Showcase").select("*");
         if (error) throw error;
         if (data != null) {
-          console.log(data);
-
           setProducts(data);
         }
       } catch (error) {
-        alert(error + "test");
+        alert(error + "Error: not able to set products");
       }
     }
 

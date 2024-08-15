@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { useNavigate } from "react-router-dom";
+
 import Link from "next/link";
 
 import { BsSegmentedNav } from "react-icons/bs";
@@ -77,10 +79,10 @@ const CompNav = () => {
           </div>
         </div>
         <Link href={"/addProject"}>
-          <div className="flex  flex-row  justify-start cursor-pointer  hover:bg-white/20 p-2 items-center rounded-md active:border gap-2">
+          <button className="flex  flex-row  justify-start cursor-pointer  hover:bg-white/20 p-2 items-center rounded-md active:border gap-2">
             <IoIosAddCircleOutline />
             <p>Add Project</p>
-          </div>
+          </button>
         </Link>
       </div>
     </div>
