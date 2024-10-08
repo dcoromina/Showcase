@@ -9,6 +9,8 @@ import PreviewPhone from "../component/phone_view";
 
 const itemDetails = (props) => {
   const product = props.product;
+  console.log(product);
+
   return (
     <div className="w-svw h-svh p-2 md:p-5">
       <div className="flex flex-col h-fit w-full bg-slate-500 rounded-lg p-2 border border-solid">
@@ -29,7 +31,7 @@ const itemDetails = (props) => {
         </div>
         {/* Info zone */}
         <div className="uppercase text-center font-bold flex flex-col items-center w-full gap-5 ">
-          <h1>[Project name]</h1>
+          <h1>Title</h1>
           <div className="flex flex-row flex-wrap w-full justify-center gap-5">
             <div className="rating">
               <input

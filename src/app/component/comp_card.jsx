@@ -4,11 +4,20 @@ import Link from "next/link";
 
 function CompCard(props, key) {
   const product = props.product;
+  const imageCard = props.product.bg_url;
+
   return (
-    <Link href={"/details"} className="h-fit">
+    <Link
+      href={{
+        pathname: "/details",
+        query: { name: "test" },
+      }}
+      className="h-fit"
+    >
       <div
+        style={{ backgroundImage: `url(${imageCard})` }}
         key={props.id}
-        className="uppercase font-bold text-xs sm:text-xs md:text-xs lg:text-base bg-[url('https://dcoromina.s-ul.eu/dCqzpQ3q')] bg-cover bg-center rounded-xl w-52 h-52 lg:w-72 lg:h-72 border-slate-300 border-solid border-4 p-3 cursor-pointer "
+        className="uppercase font-bold text-xs sm:text-xs md:text-xs lg:text-base  bg-cover bg-center rounded-xl w-52 h-52 lg:w-72 lg:h-72 border-slate-300 border-solid border-4 p-3 cursor-pointer "
       >
         <div className="relative h-full">
           <div className="absolute flex flex-row justify-between items-center w-full">

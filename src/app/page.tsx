@@ -1,7 +1,6 @@
 "use client";
 
 import CompNav from "./details/navbar";
-import Browser from "./details/browser";
 
 import { useState, useEffect } from "react";
 import { supabase } from "./utils/supabase/clients";
